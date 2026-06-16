@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/brotzeit-wissen"
+  to = "/brotzeit-wissen.html"
+  status = 200
+
+[[redirects]]
+  from = "/rezepte"
+  to = "/rezepte.html"
+  status = 200
+
+[[redirects]]
+  from = "/konfigurator"
+  to = "/konfigurator.html"
+  status = 200

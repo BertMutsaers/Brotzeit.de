@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brotzeit-Konfigurator – brotzeit.de</title>
+  <meta name="description" content="Der Brotzeit-Konfigurator: Stell dir deine perfekte Brotzeit zusammen – für jeden Anlass und Geschmack.">
+  <link rel="icon" type="image/png" href="assets/img/BrotzeitSymbol.png">
+  <link rel="apple-touch-icon" href="assets/img/BrotzeitSymbol.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header transparent" role="banner">
+    <div class="header-inner">
+      <a class="header-logo" href="index.html" aria-label="BROTZEIT – Zur Startseite">
+        <img class="logo-white" src="assets/img/BrotzeitSymbolweiss.png" alt="Brotzeit Logo" width="40" height="40">
+        <img class="logo-dark" src="assets/img/BrotzeitSymbol.png" alt="Brotzeit Logo" width="40" height="40">
+      </a>
+      <nav class="header-nav" aria-label="Hauptnavigation">
+        <a href="brotzeit-wissen.html" data-i18n="nav_wissen">Brotzeit-Wissen</a>
+        <a href="rezepte.html" data-i18n="nav_rezepte">Rezepte</a>
+        <a href="konfigurator.html" data-i18n="nav_konfigurator">Konfigurator</a>
+      </nav>
+      <div class="lang-dropdown" aria-label="Sprache wählen">
+        <button class="lang-trigger" aria-haspopup="listbox" aria-expanded="false">
+          <span class="lang-flag">🇩🇪</span>
+          <span class="lang-code">DE</span>
+          <svg class="lang-chevron" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"/></svg>
+        </button>
+        <ul class="lang-menu" role="listbox">
+          <li><button class="lang-btn active" data-lang="de" data-flag="🇩🇪">🇩🇪 DE</button></li>
+          <li><button class="lang-btn" data-lang="en" data-flag="🇬🇧">🇬🇧 EN</button></li>
+          <li><button class="lang-btn" data-lang="fr" data-flag="🇫🇷">🇫🇷 FR</button></li>
+          <li><button class="lang-btn" data-lang="nl" data-flag="🇳🇱">🇳🇱 NL</button></li>
+          <li><button class="lang-btn" data-lang="pl" data-flag="🇵🇱">🇵🇱 PL</button></li>
+        </ul>
+      </div>
+      <button class="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="brotzeit-wissen.html" data-i18n="nav_wissen">Brotzeit-Wissen</a>
+    <a href="rezepte.html" data-i18n="nav_rezepte">Rezepte</a>
+    <a href="konfigurator.html" data-i18n="nav_konfigurator">Konfigurator</a>
+    <div class="mobile-lang">
+      <button class="lang-btn active" data-lang="de">DE</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="nl">NL</button>
+      <button class="lang-btn" data-lang="pl">PL</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="sub-hero">
+      <div class="sub-hero-left">
+        <div class="sub-hero-content">
+          <p class="t-label" data-i18n="sub_konf_label">Konfigurator</p>
+          <h1 data-i18n="sub_konf_h1">Brotzeit-Konfigurator</h1>
+        </div>
+      </div>
+      <div class="sub-hero-right">
+        <img src="assets/img/konfigurator.png" alt="Brotzeit-Konfigurator">
+      </div>
+    </section>
+
+    <section class="sub-content">
+      <div class="container">
+        <h2 data-i18n="sub_konf_h2">Deine perfekte Brotzeit</h2>
+        <p data-i18n="sub_konf_p">Der Konfigurator hilft dir, die ideale Brotzeit für deinen Anlass zusammenzustellen – mit den richtigen Zutaten, Mengen und Kombinationen.</p>
+        <span class="placeholder-notice" data-i18n="placeholder">Inhalte folgen in Kürze</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="assets/img/BrotzeitLogo-Transparentweiss.png" alt="Brotzeit – Gemeinsam genießen" style="height:64px;width:auto;">
+        </div>
+        <nav class="footer-links" aria-label="Footer Navigation">
+          <a href="impressum.html" data-i18n="footer_impressum">Impressum</a>
+          <a href="datenschutz.html" data-i18n="footer_datenschutz">Datenschutz</a>
+        </nav>
+        <p class="footer-copy">&copy; <span id="year"></span> brotzeit.de</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
